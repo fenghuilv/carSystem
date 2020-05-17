@@ -1,0 +1,24 @@
+在数据库创建车辆库存表 --SQL:sql_initial.sql
+库存表路径
+D:\Dev\110 jiker\L2\project1\carSystem\src\main\resources\sql_script\sql_initial.sql
+
+
+Task1 购车（Post请求）
+postman测试地址
+http://localhost:8080/car/buyById
+参数： id = 2
+       count=1
+
+Task2  查询某品牌车型，模拟分页查询 （get请求）
+测试地址
+http://localhost:8080/car/FilterCarName?carname=&start=0&end=2
+
+
+
+
+设计摘要
+controller增加 2个 requestmapping（购车、品牌查询）
+service 增加2个服务（购车、品牌查询）
+impl 增加2个实现，调用mapper（购车、品牌查询）
+mapper增加两个具体实现（购车、品牌查询）
+
