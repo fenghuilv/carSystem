@@ -25,4 +25,10 @@ public interface CarDao {
 
     @Insert("insert into carMessage(carName,carType,price,carSeries) values(#{carName},#{carType},#{price},#{carSeries})")
     void insertCar(Car car);
+
+    @Update("update carsinventory set carcount = carcount - #{count} where id = #{id} and carcount >= #{count}")
+    int buyById(int id, int count);
+
+    @Select("SELECT * from carmessage where carName like '%${carname}%'  limit #{start},#{range}")
+    List<Car> filterByCarName(String carname, int start, int range);
 }

@@ -43,4 +43,14 @@ public class CarServiceImpl implements CarService {
     public void insertCar(Car car) {
         carDao.insertCar(car);
     }
+
+    @Override
+    public int buyById(int id, int count) {
+        return carDao.buyById(id,count);
+    }
+
+    @Override
+    public List<Car> filterByCarName(String carname, int start, int range) {
+        return carDao.filterByCarName(carname,start,range);
+    }
 }
