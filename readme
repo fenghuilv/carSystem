@@ -1,6 +1,6 @@
 在数据库创建车辆库存表 --SQL:sql_initial.sql
 库存表路径
-D:\Dev\110 jiker\L2\project1\carSystem\src\main\resources\sql_script\sql_initial.sql
+...\src\main\resources\sql_script\sql_initial.sql
 
 
 Task1 购车（Post请求）
